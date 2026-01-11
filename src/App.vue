@@ -313,6 +313,7 @@ function flipCard(card) {
       setTimeout(() => {
         a.matched = true;
         b.matched = true;
+        // ✅ 配對成功仍顯示「xxx發電」
         memoryStatus.value = `✅ 配對成功：${a.name}`;
         lock.value = false;
       }, 450);
@@ -587,6 +588,20 @@ resetQuiz();
   gap: 8px;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.page-title {
+  color: #fff;
+  margin: 0 0 6px;
+}
+.page-muted {
+  color: #cfcfcf;
+  margin: 8px 0 14px;
+}
+
+.muted {
+  color: #555;
+  margin: 8px 0 14px;
 }
 
 .actions {
